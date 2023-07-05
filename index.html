@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script
+      src="https://kit.fontawesome.com/7852e4b612.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <img src="images/logo.svg" class="logo" alt="" />
+        <h1 class="header">
+          We are launching <span class="bold-text">soon!</span>
+        </h1>
+        <p class="text">Subscribe and get notified</p>
+      </section>
+      <section class="form-side">
+        <form action="#" class="form-mobile" method="POST">
+          <input
+            type="text"
+            class="text-input"
+            value="Your email Address..."
+            id="email-input"
+            onfocus="clearValue(this)"
+            onblur="restoreValue(this)"
+          />
+          <input type="submit" class="btn" value="Notify Me" />
+        </form>
+        <div class="input-container"><span class="error-message"></span></div>
+      </section>
+      <section>
+        <img
+          src="images/illustration-dashboard.png"
+          alt=""
+          style="max-width: 50%"
+        />
+        <ul class="list-ul">
+          <li>
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook-f fa-2xs"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com"
+              ><i class="fa-brands fa-twitter fa-2xs"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram fa-2xs"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p class="copyRight">&copy; Copyright Ping. All rights reserved.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/yetkin-karasungur/"
+          >Yetkin Karasungur</a
+        >.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
